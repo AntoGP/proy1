@@ -92,19 +92,13 @@ while opcion !=11:
         n2 = input("Numero 2 - Expresa en palabras cada digito : ")
         print(sumarDosNumeros(n1, n2))
     elif opcion == 10:
-        print("Opcion 10")
-        print("8. siguientePrimo")
-        print(siguientePrimo(45))
-        print(siguientePrimo(733))
-        print(siguientePrimo(15))
-        print(siguientePrimo(941))
+          # --- leer datos e invocar a la funcion
+        n = int(input("Filas <= 9: "))
+        while n < 1 and n>9:
+            n = int(input("Filas <= 9: "))
+            
+        print(siguientePrimo(n))
         print()
-
-        print("10. funcion10")
-        print(funcion10(3))
-        print()
-        print(funcion10(5))
-        print()
-        print(funcion10(9))
+        print(funcion10(n))
     print("------------------------------------")
 print("Gracias por usar el programa")
